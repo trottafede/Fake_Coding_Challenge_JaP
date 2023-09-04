@@ -28,5 +28,11 @@ const handleSubmit = (e) => {
     },
   })
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then((json) => {
+      console.log(json);
+      document.getElementById("response_id").innerHTML = "ID: " + json.id;
+      document.getElementById("response_name").innerHTML = "Name: " +json.name;
+      document.getElementById("response_lastname").innerHTML = "Lastname: " + json.lastname;
+      document.getElementById("response_DOB").innerHTML = "DOB: " + json.DOB;
+    });
 };
