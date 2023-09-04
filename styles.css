@@ -27,3 +27,7 @@ p {
   font-size: 1.4rem;
   font-weight: bolder;
 }
+
+#spinner { 
+  display: none;
+}

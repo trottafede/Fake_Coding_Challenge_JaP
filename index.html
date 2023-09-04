@@ -48,18 +48,21 @@
               <label for="DOB" class="form-label">Fecha De Nacimiento</label>
               <input type="date" class="form-control" id="DOB" />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button id="myBtn" type="submit" class="btn btn-outline-danger">Enviar data</button>
           </form>
         </div>
 
         <div class="col-6">
+          
           <h2>Info del server</h2>
-          <div id="info_del_server">
-            <p id="response_id"></p>
-            <p id="response_name"></p>
-            <p id="response_lastname"></p>
-            <p id="response_DOB"></p>
+          <div id="spinner" class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
           </div>
+          
+          <p id="response_id"></p>
+          <p id="response_name"></p>
+          <p id="response_lastname"></p>
+          <p id="response_DOB"></p>
         </div>
       </div>
     </div>
