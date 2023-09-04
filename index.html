@@ -16,12 +16,20 @@
     <!-- My css and JS -->
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h1>Hi world</h1>
+          <h2>Hi world</h2>
           <form id="myForm">
             <div class="mb-3">
               <label for="name" class="form-label">Nombre</label>
@@ -46,11 +54,12 @@
 
         <div class="col-6">
           <h2>Info del server</h2>
-          <p id="response_id"></p>
-          <p id="response_name"></p>
-          <p id="response_lastname"></p>
-          <p id="response_DOB"></p>
-
+          <div id="info_del_server">
+            <p id="response_id"></p>
+            <p id="response_name"></p>
+            <p id="response_lastname"></p>
+            <p id="response_DOB"></p>
+          </div>
         </div>
       </div>
     </div>
