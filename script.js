@@ -38,6 +38,6 @@ const handleSubmit = (e) => {
         "Lastname: " + json.lastname;
       document.getElementById("response_DOB").innerHTML = "DOB: " + json.DOB;
 
-      spinner.style.setProperty('display', 'none');
+      spinner.style.setProperty("display", "none");
     });
 };
